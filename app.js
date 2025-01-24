@@ -16,6 +16,12 @@ function adicionarAmigo() {
         return;
     }
 
+    // Verifica se a entrada contém apenas letras e espaços
+    if (!/^[a-zA-Z\s]+$/.test(amigo)) {
+        alert('Digite um nome válido (somente letras e espaços)!');
+        return;
+    }
+
     amigos.push(amigo);
 
     listaAmigos.innerHTML = amigos.join(', ');
