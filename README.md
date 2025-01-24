@@ -16,7 +16,7 @@ Este projeto é uma aplicação simples para gerenciar uma lista de amigos e sor
    - Clique no botão "Adicionar Amigo".
    - O nome será adicionado à lista de amigos exibida na tela.
 
-2. **Validar Entrada**:
+2. **Regras**:
    - O nome deve conter apenas letras e espaços.
    - Nomes contendo números ou símbolos não serão aceitos.
    - Nomes compostos apenas por espaços em branco não serão aceitos.

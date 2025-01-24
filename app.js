@@ -1,4 +1,4 @@
-// Version: 1.1
+// Version: 1.2
 
 // Variables
 let inputAmigo = document.getElementById('amigo');
@@ -17,10 +17,13 @@ function adicionarAmigo() {
     }
 
     // Verifica se a entrada contém apenas letras e espaços
-    if (!/^[a-zA-Z\s]+$/.test(amigo)) {
+    if (!/^[a-zA-ZÀ-ÿ\s]+$/.test(amigo)) {
         alert('Digite um nome válido (somente letras e espaços)!');
         return;
     }
+
+    // Remove espaços extras entre as letras
+    amigo = amigo.replace(/\s+/g, ' ');
 
     amigos.push(amigo);
 
@@ -45,7 +48,15 @@ function sortearAmigo() {
     let amigoSorteado = Math.floor(Math.random() * tamanhoDaLista);
     let exibirSorteado = amigos[amigoSorteado];
 
+    // Remove o amigo sorteado da lista
+    amigos.splice(amigoSorteado, 1);
+
+    // Atualiza a lista de amigos exibida
+    listaAmigos.innerHTML = amigos.join(', ');
+
     resultList.innerHTML = exibirSorteado;
+
+
 
 }
 function retornarTamanhoDaLista() {
