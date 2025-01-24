@@ -1,4 +1,4 @@
-// Version: 1.0
+// Version: 1.1
 
 // Variables
 let inputAmigo = document.getElementById('amigo');
@@ -9,7 +9,7 @@ let amigos = [];
 // Functions
 function adicionarAmigo() {
 
-    let amigo = inputAmigo.value;
+    let amigo = inputAmigo.value.trim();
     
     if (amigo === '') {
         alert('Digite o nome do amigo!');
