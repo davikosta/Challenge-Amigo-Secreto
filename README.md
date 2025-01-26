@@ -2,6 +2,8 @@
 
 Este projeto é uma aplicação simples para gerenciar uma lista de amigos e sortear um amigo secreto.
 
+## [Teste o projeto clicando aqui](https://davikosta.github.io/Challenge-Amigo-Secreto/)
+
 ## Funcionalidades
 
 - Adicionar amigos à lista
